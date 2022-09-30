@@ -33,38 +33,116 @@ body {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor6));
+    min-height: 150px;
+    text-align: center;
 }
 
 header > h1 {
     color: white;
     font-family: var(--font-destaque);
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.411);
 }
 
 header > p {
     color: white;
+    font-size: 1.4em;
+    font-family: var(--font-padrao);
+    max-width: 820px;
+    padding-bottom: 20px;
+    margin: auto;
 }
 
 nav {
     background-color: var(--cor6);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.248);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    background-color: var(--cor2);
+    color: #063d1e;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+}
+
+nav a:active {
+    background-color: var(--cor2);
+    color: #000dff;
+    border-radius: 6px;
 }
 
 main {
     background-color: white;
     margin: auto;
+    margin-bottom: 30px;
     border-radius: 0px 0px 10px 10px;
     max-width: 1000px;
     min-width: 320px;
     padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.377);
 }
 
 main h1 {
     color: var(--cor5);
     font-family: var(--font-android);
+    font-size: 2em;
 }
 
 main h2 {
     font-family: var(--font-android);
     color: #1a5c37;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    border-radius: 20px;
+    padding: 5px 1px 2px 15px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor6);
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor6);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a::after {
+    content: ' 🔗';
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+main img {
+    width: 100%;
+}
+
+main .pq {
+    display: block;
+    margin: auto;
+    max-width: 350px;
 }
 
 footer {
